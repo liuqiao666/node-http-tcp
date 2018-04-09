@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>node.js第二次作业</title>
+		<style type="text/css">
+			div{
+				border: solid 2px black;
+				align-content: center;
+				padding: 20px;
+				margin-top: 35px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>作业：</h1>
+		<h3>建一个TCP服务端和客户端程序，要求需要做到以下几点：</h3>
+		<form action="http://127.0.0.1:8080/send" method="post">
+			<div>
+				1-1.请输入你要向服务端发送的文字信息：<input type="text"  name="messages" /><br><br>
+				1-2.请选择你要向服务端发送的文件信息：<input type="file"  name="file" /><br><br>
+				<input type="submit" value="发送" name="" style="margin-left: 500px;"></input><br><br>
+			</div>
+			<div>
+				2.客户端能读取指定的文件并将内容发送给服务器：
+				<input type="submit" value="读取love.jpg文件" name="love" />
+				<input type="submit" value="读取input.txt文件" name="file" />
+			</div>
+			<div>
+				3.服务端接收到客户端数据，如果是一般文字信息就打印到客户端,
+				并显示接收到数据的长度，并向客户端发送回应信息；
+				如果是文件信息就以文件的形式保存下来。
+				<input type="submit" value="读取love.jpg文件" name="love" />
+				<input type="submit" value="读取input.txt文件" name="file" />
+			</div>
+		</form>
+		
+	</body>
+</html>
